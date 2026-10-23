@@ -11,7 +11,7 @@ git clone https://git.arrc.ou.edu/radar/uhd-docker
 and a placeholder project `vika`
 
 ```
-https://git.arrc.ou.edu/radar/vika
+git clone https://git.arrc.ou.edu/radar/vika
 ```
 
 Then, create a symbolic link of `vika` in `uhd-docker`
@@ -26,22 +26,10 @@ To build the base image and launch a container:
 make
 ```
 
-or
-
-```
-docker compose up --build -d
-```
-
 To attach to the container:
 
 ```
 make attach
-```
-
-or
-
-```
-docker exec -it uhd-vika bash
 ```
 
 If you try attaching to the container and run the command `tree`, you should get a directory structure like this in the container
