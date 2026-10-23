@@ -1,11 +1,35 @@
 # UHD Docker
 
-Create a developer environment inside a Docker container
+This is a setup to create a developer environment inside a Docker container. It is based on the Ubuntu 24.04 image with a minimal installation to provide basic development environment.
+
+Getting the project
+
+```
+git clone https://git.arrc.ou.edu/radar/uhd-docker
+```
+
+and a placeholder project `vika`
+
+```
+https://git.arrc.ou.edu/radar/vika
+```
+
+Then, create a symbolic link of `vika` in `uhd-docker`
+```
+cd uhd-docker
+ln -s ../vika .
+```
 
 To build the base image and launch a container:
 
 ```
 make
+```
+
+or
+
+```
+docker compose up --build -d
 ```
 
 To attach to the container:
