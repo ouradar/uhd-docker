@@ -30,7 +30,7 @@ COPY run.sh /root/run.sh
 
 RUN apt-get update && \
     # build essential and UHD dependencies
-    apt-get install -y build-essential git \
+    apt-get install -y build-essential git tree \
     libuhd-dev uhd-host libboost-program-options-dev \
     libfftw3-dev libnetcdf-dev libssl-dev libarchive-dev && \
     rm -rf /var/lib/apt/lists/* ; \

@@ -5,7 +5,14 @@ CC = docker
 CFLAGS = -t arrc/uhd-docker:${VERSION} -t arrc/uhd-docker:latest
 
 all:
+	$(CC) compose up --build -d
+
+attach:
+	$(CC) exec -it uhd-vika bash
+
+build:
 	$(CC) build $(CFLAGS) --no-cache .
 
 clean:
 	$(CC) container prune -f
+

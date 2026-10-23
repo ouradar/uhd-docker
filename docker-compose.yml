@@ -1,8 +1,9 @@
 services:
   uhd:
     build: .
-    container_name: uhd-vika
     image: arrc/uhd-docker:latest
+    container_name: uhd-vika
+    hostname: uhd-dev
     stdin_open: true
     tty: true
     volumes:
