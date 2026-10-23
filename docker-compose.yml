@@ -1,0 +1,10 @@
+services:
+  uhd:
+    build: .
+    container_name: uhd-vika
+    image: arrc/uhd-docker:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./vika:/root/Developer/vika
+      - ${HOME}/.gitconfig:/root/.gitconfig
