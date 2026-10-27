@@ -5,19 +5,19 @@ This is a setup to create a developer environment inside a Docker container. It 
 Getting the project
 
 ```
-git clone https://git.arrc.ou.edu/radar/uhd-docker
+git clone https://github.com/ouradar/uhd-docker
 ```
 
-and a placeholder project `vika`
+and a placeholder project `ruri`
 
 ```
-git clone https://git.arrc.ou.edu/radar/vika
+git clone https://github.com/ouradar/ruri
 ```
 
-Then, create a symbolic link of `vika` in `uhd-docker`
+Then, create a symbolic link of `ruri` in `uhd-docker`
 ```
 cd uhd-docker
-ln -s ../vika .
+ln -s ../ruri .
 ```
 
 To build the base image and launch a container:

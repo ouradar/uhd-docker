@@ -8,7 +8,7 @@ all:
 	$(CC) compose up --build -d
 
 attach:
-	$(CC) exec -it uhd-vika bash
+	$(CC) exec -it uhd-ruri bash
 
 build:
 	$(CC) build $(CFLAGS) --no-cache .
