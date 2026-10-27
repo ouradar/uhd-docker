@@ -40,6 +40,12 @@ Congratulations! You are now ready to develop
 
 ## Other Useful Commands
 
+To spin down the container:
+
+```
+make stop
+```
+
 To check if the container exists
 
 ```

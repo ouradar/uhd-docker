@@ -16,3 +16,11 @@ build:
 clean:
 	$(CC) container prune -f
 
+down:
+	$(CC) compose down
+
+stop:
+	$(CC) compose down
+
+up:
+	$(CC) compose up -d --no-build
