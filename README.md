@@ -34,7 +34,7 @@ make attach
 
 If you try attaching to the container and run the command `tree`, you should get a directory structure like this in the container
 
-![Figure](blob/tree.png)
+![Figure](blob/ruri.png)
 
 Congratulations! You are now ready to develop
 
