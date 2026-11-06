@@ -3,9 +3,14 @@ services:
     build: .
     image: arrc/uhd-docker:latest
     container_name: uhd-ruri
+    network_mode: host
     hostname: uhd-dev
+    privileged: true
     stdin_open: true
     tty: true
     volumes:
       - ./ruri:/root/Developer/ruri
       - ${HOME}/.gitconfig:/root/.gitconfig
+    dns_opt:
+      - "single-request"
+      - "timeout:1"

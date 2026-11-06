@@ -57,3 +57,11 @@ Expect to see:
 CONTAINER ID   IMAGE                    COMMAND          CREATED          STATUS          PORTS     NAMES
 8fd2922e03f4   arrc/uhd-docker:latest   "/root/run.sh"   23 minutes ago   Up 22 minutes             uhd-vika
 ```
+
+
+Try:
+```
+benchmark_rate --args "type:n3xx,addr=192.168.21.109,master_clock_rate=125e6" --duration 5 --rx_rate 7.8125e6 --rx_otw sc16
+
+benchmark_rate --args "type:n3xx,addr=ni-n3xx-37FDEA5.local,master_clock_rate=125e6" --duration 5 --rx_rate 7.8125e6 --rx_otw sc16
+```
